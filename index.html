@@ -16,8 +16,27 @@
     <div class="row">
     <h1> Pulau Sebuku </h1>
     </div>
-    <div class="row">        
-            <div style="width:25%; height:500px" id="map" class="map"></div>
+    <div class="row">   
+        <div class="col-lg-4">
+            <div style="height:500px" id="map" class="map"></div>
+        </div>
+        <div class="col-lg-2 col-md-offset-2">
+            <p>Keterangan Lahan Kritis :</p>
+              <table class="table table-bordered">
+                <tr>
+                  <td style="background-color:#A06332"></td>
+                  <td>Tidak Kritis</td>
+                </tr>
+                <tr>
+                  <td style="background-color:#D19A6F"></td>
+                  <td>Agak Kritis</td>
+                </tr>
+                <tr>
+                  <td style="background-color:#FED699"></td>
+                  <td>Kritis</td>
+                </tr>
+              </table>
+            </div>
     </div>
   </div>
     <script>
@@ -33,7 +52,7 @@
       stroke: new ol.style.Stroke({color: 'black', width: 2}),
       points: 3,
       radius: 10,
-      angle: 0
+      angle: 0,
     })
   });
     
@@ -155,7 +174,7 @@
           var i, ii;
           for (i = 0, ii = features.length; i < ii; ++i) {
             info.push(features[i].get('name'));
-          }
+            }
           document.getElementById('info').innerHTML = info.join(', ') || '(unknown)';
           map.getTarget().style.cursor = 'pointer';
         } else {
@@ -175,6 +194,7 @@
       map.on('click', function(evt) {
         displayFeatureInfo(evt.pixel);
       });
+      
     </script>
   </body>
 </html>
