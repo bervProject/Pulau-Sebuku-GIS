@@ -44,6 +44,6 @@ Catatan : Data ini akan menampilkan gunung yang di Indonesia begitu juga di Prov
 
 ## Data Lahan Kritis
 
-Data didapatkan melalui tautan [berikut](http://appgis.dephut.go.id/appgis/download.aspx).
+Data ini diambil dari Kementrian Kehutanan. Data didapatkan melalui tautan [berikut](http://appgis.dephut.go.id/appgis/download.aspx).
 
 Lisensi dari data ini adalah [Creative Commons Attribution Lisence (cc-by)](http://www.opendefinition.org/licenses/cc-by) seperti disebutkan pada [data.go.id](http://data.go.id/dataset/data-lahan-kritis-di-kalimantan/resource/24281d8c-3472-4c7c-99be-01fcc4666384)
