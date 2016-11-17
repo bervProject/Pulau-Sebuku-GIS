@@ -24,7 +24,6 @@ Lakukan query ke [overpass-turbo.eu](http://overpass-turbo.eu) dengan query seba
 
 ```
 [out:json][timeout:25];
-// gather results
 (
   node["is_in:state"="Kalimantan Selatan"]["natural"="peak"]({{bbox}});
   node["is_in:country"="Indonesia"]["natural"="peak"]({{bbox}});
@@ -38,3 +37,7 @@ out skel qt;
 Lalu lakukan export ke format yang diinginkan, misalkan format geoJSON.
 
 Catatan : Data ini akan menampilkan gunung yang di Indonesia begitu juga di Provinsi Kalimantan Selatan. Kueri di Negara Indonesia diperlukan dikarenakan masih terdapat kekurangan jika hanya Provinsi Kalimantan Selatan (hanya ditemukan 1) padahal ada 2.
+
+## Data Lahan Kritis
+
+Data didapatkan melalui tautan [berikut](http://appgis.dephut.go.id/appgis/download.aspx).
