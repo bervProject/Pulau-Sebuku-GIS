@@ -22,7 +22,7 @@ Lalu lakukan export ke format yang diinginkan, misalkan format geoJSON.
 
 Lakukan query ke [overpass-turbo.eu](http://overpass-turbo.eu) dengan query sebagai berikut :
 
-```json
+```
 [out:json][timeout:25];
 // gather results
 (
