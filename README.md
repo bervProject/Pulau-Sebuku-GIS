@@ -42,8 +42,14 @@ Lisensi dari data ini adalah [Open Data Commons Open Database License (ODbL)](ht
 
 Catatan : Data ini akan menampilkan gunung yang di Indonesia begitu juga di Provinsi Kalimantan Selatan. Kueri di Negara Indonesia diperlukan dikarenakan masih terdapat kekurangan jika hanya Provinsi Kalimantan Selatan (hanya ditemukan 1) padahal ada 2.
 
-## Data Lahan Kritis
+### Data Lahan Kritis
 
 Data ini diambil dari Kementrian Kehutanan. Data didapatkan melalui tautan [berikut](http://appgis.dephut.go.id/appgis/download.aspx).
 
 Lisensi dari data ini adalah [Creative Commons Attribution Lisence (cc-by)](http://www.opendefinition.org/licenses/cc-by) seperti disebutkan pada [data.go.id](http://data.go.id/dataset/data-lahan-kritis-di-kalimantan/resource/24281d8c-3472-4c7c-99be-01fcc4666384)
+
+## Pembuatan Peta
+
+1. Mempersiapkan setiap berkas seperti, batas pantai, lokasi gunung, dan lahan kritis.
+2. Menggunakan open layer untuk merender beberapa data tersebut. Anda dapat menggunakan kode index.html yang sudah ada untuk percobaan.
+3. Deploy ke github pages atau server lainnya. Bisa dicoba dilokal juga.
