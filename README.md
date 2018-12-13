@@ -1,30 +1,74 @@
 # Pulau Sebuku
 
-## Sumber Data Terbuka
+This repository forked from https://github.com/BesutKode/uni-task-2-berviantoleo. This repositories will updated with some new features and maybe data.
+
+## How to Deploy
+
+`In Progress`
+
+## How to Contribute
+
+`In Progress`
+
+## Dependencies
+
+* Vue.js
+* Leaflet
+* Buefy/Bulma
+
+## Code License
+
+MIT
+
+```
+MIT License
+
+Copyright (c) 2018 Bervianto Leo Pratama
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## Open Source Data License
 
 ### Data Kecamatan Sebuku Tahun 2014
 
-Data Kecamatan Sebuku tahun 2014 diperoleh melalui situs resmi Kabupaten Kota Baru yaitu pada tautan [berikut](http://www.bappeda-kotabaru.info/umum/29/), lalu diambil data paling baru yang tersedia dari tautan tersebut menuju ke laman [berikut](http://www.mediafire.com/download/k89zmocmeamc1xk/KCA2014-PSEBUKU.rar) lalu diekstrak dan disimpan di repositori ini untuk mempermudah pengaksesan data. Data tersebut dapat dilihat [di sini](./Data%20Kecamatan%20Sebuku%20Tahun%202014).
+Data about Kecamatan Sebuku in 2014 can be downloaded from [here](http://www.bappeda-kotabaru.info/umum/29/). In this repository also have data that downloaded from [here](http://www.mediafire.com/download/k89zmocmeamc1xk/KCA2014-PSEBUKU.rar) that already extracted into [here](./Data%20Kecamatan%20Sebuku%20Tahun%202014). Please refer to [this](http://www.bappeda-kotabaru.info/umum/29/) site for newest data.
 
-### Data Coastline Sebuku
+### Coastline Sebuku
 
-Lakukan query ke [overpass-turbo.eu](http://overpass-turbo.eu) dengan query sebagai berikut :
+Query to [overpass-turbo.eu](http://overpass-turbo.eu) with this query :
 
-```json
+```sql
 way(29044638);
 (._;>;);
 out body;
 ```
 
-Lalu lakukan export ke format yang diinginkan, misalkan format geoJSON.
+Export data into GeoJSON.
 
-Lisensi dari data ini adalah [Open Data Commons Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/).
+License of Coastline Sebuku Data : [Open Data Commons Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/).
 
-### Data Gunung atau Bukit di Pulau Sebuku
+### Mountain or Hill in Pulau Sebuku
 
-Lakukan query ke [overpass-turbo.eu](http://overpass-turbo.eu) dengan query sebagai berikut :
+Query into [overpass-turbo.eu](http://overpass-turbo.eu) with this query :
 
-```
+```sql
 [out:json][timeout:25];
 (
   node["is_in:state"="Kalimantan Selatan"]["natural"="peak"]({{bbox}});
@@ -36,20 +80,22 @@ out body;
 out skel qt;
 ```
 
-Lalu lakukan export ke format yang diinginkan, misalkan format geoJSON.
+Export data into GeoJSON.
 
-Lisensi dari data ini adalah [Open Data Commons Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/).
+License of Mountain or Hill in Pulau Sebuku Data: [Open Data Commons Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/).
 
-Catatan : Data ini akan menampilkan gunung yang di Indonesia begitu juga di Provinsi Kalimantan Selatan. Kueri di Negara Indonesia diperlukan dikarenakan masih terdapat kekurangan jika hanya Provinsi Kalimantan Selatan (hanya ditemukan 1) padahal ada 2.
+Notes:
+```
+This query will also show mountain or hill in Indonesia because if restrict only Kalimantan Selatan, will show only one result, but in reality we have two mountain in Kalimantan Selatan especially in Pulau Sebuku.
+```
 
 ### Data Lahan Kritis
 
-Data ini diambil dari Kementrian Kehutanan. Data didapatkan melalui tautan [berikut](http://appgis.dephut.go.id/appgis/download.aspx).
+This data from Kementrian Kehutanan. Data downloaded from [here](http://appgis.dephut.go.id/appgis/download.aspx).
 
-Lisensi dari data ini adalah [Creative Commons Attribution Lisence (cc-by)](http://www.opendefinition.org/licenses/cc-by) seperti disebutkan pada [data.go.id](http://data.go.id/dataset/data-lahan-kritis-di-kalimantan/resource/24281d8c-3472-4c7c-99be-01fcc4666384)
+License of Data Lahan Kritis : [Creative Commons Attribution Lisence (cc-by)](http://www.opendefinition.org/licenses/cc-by) as mentioned in [data.go.id](http://data.go.id/dataset/data-lahan-kritis-di-kalimantan/resource/24281d8c-3472-4c7c-99be-01fcc4666384)
 
-## Pembuatan Peta
+## GIS Creation of Pulau Sebuku
 
-1. Mempersiapkan setiap berkas seperti, batas pantai, lokasi gunung, dan lahan kritis.
-2. Menggunakan open layer untuk merender beberapa data tersebut. Anda dapat menggunakan kode index.html yang sudah ada untuk percobaan.
-3. Deploy ke github pages atau server lainnya. Bisa dicoba dilokal juga.
+1. Preparing data of Coastline, Mountain Location, and Lahan Kritis, etc (another data will provided in next version).
+2. Use this repository to deploy in Github Pages or another site. Please refer to how to deploy.
