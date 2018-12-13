@@ -1,5 +1,7 @@
 # Pulau Sebuku
 
+[![Build Status](https://travis-ci.org/bervProject/Pulau-Sebuku-GIS.svg?branch=master)](https://travis-ci.org/bervProject/Pulau-Sebuku-GIS)
+
 This repository forked from https://github.com/BesutKode/uni-task-2-berviantoleo. This repositories will updated with some new features and maybe data.
 
 ## How to Deploy
