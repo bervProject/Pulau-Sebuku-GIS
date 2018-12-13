@@ -6,8 +6,8 @@
         <div class="column is-four-fifths">
           <l-map ref="myMap" style="height: 500px; width: 100%" :zoom="zoom" :center="center">
             <l-tile-layer :url="url"></l-tile-layer>
-            <l-geo-json :geojson="coastline"></l-geo-json>
-            <l-geo-json :geojson="peak"></l-geo-json>
+            <l-geo-json v-if="isCoastline" :geojson="coastline"></l-geo-json>
+            <l-geo-json v-if="isPeak" :geojson="peak"></l-geo-json>
           </l-map>
         </div>
         <div class="column is-one-fifths">
@@ -32,6 +32,17 @@
               <td>Kritis</td>
             </tr>
           </table>
+          <h2 class="subtitle">Options</h2>
+          <div class="field">
+            <b-checkbox v-model="isCoastline">
+              Coastline
+            </b-checkbox>
+          </div>
+          <div class="field">
+            <b-checkbox v-model="isPeak">
+              Peak
+            </b-checkbox>
+          </div>
         </div>
       </div>
     </div>

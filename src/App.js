@@ -8,7 +8,10 @@ export default {
       center: [-3.5, 116.36667],
       bounds: null,
       coastline: null,
-      peak: null
+      peak: null,
+      lahanKritis: null,
+      isPeak: true,
+      isCoastline: true
     }
   },
   methods: {
@@ -23,10 +26,14 @@ export default {
         .then(response => {
           this.peak = response.data
         })
+    },
+    loadLahanKritis () {
+      this.lahanKritis = window.omnivore.kml('assets/Kalimantan.kml')
     }
   },
   created () {
     this.loadCoastline()
     this.loadPeak()
+    // this.loadLahanKritis()
   }
 }
