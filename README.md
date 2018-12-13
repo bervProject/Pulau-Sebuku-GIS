@@ -29,7 +29,7 @@ Lakukan query ke [overpass-turbo.eu](http://overpass-turbo.eu) dengan query seba
 (
   node["is_in:state"="Kalimantan Selatan"]["natural"="peak"]({{bbox}});
   node["is_in:country"="Indonesia"]["natural"="peak"]({{bbox}});
-  
+
 );
 out body;
 >;
@@ -53,3 +53,33 @@ Lisensi dari data ini adalah [Creative Commons Attribution Lisence (cc-by)](http
 1. Mempersiapkan setiap berkas seperti, batas pantai, lokasi gunung, dan lahan kritis.
 2. Menggunakan open layer untuk merender beberapa data tersebut. Anda dapat menggunakan kode index.html yang sudah ada untuk percobaan.
 3. Deploy ke github pages atau server lainnya. Bisa dicoba dilokal juga.
+
+## Technical
+
+### Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
