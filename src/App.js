@@ -16,13 +16,13 @@ export default {
   },
   methods: {
     loadCoastline () {
-      axios.get('http://localhost:8080/assets/sebuku-coastline.geojson')
+      axios.get('/assets/sebuku-coastline.geojson')
         .then(response => {
           this.coastline = response.data
         })
     },
     loadPeak () {
-      axios.get('http://localhost:8080/assets/sebuku-node-peak.geojson')
+      axios.get('/assets/sebuku-node-peak.geojson')
         .then(response => {
           this.peak = response.data
         })

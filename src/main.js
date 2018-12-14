@@ -5,6 +5,7 @@ import Vue from 'vue'
 import Buefy from 'buefy'
 import { L, LMap, LTileLayer, LMarker, LGeoJson } from 'vue2-leaflet'
 import App from './App.vue'
+import axios from 'axios'
 
 Vue.component('l-map', LMap)
 Vue.component('l-tile-layer', LTileLayer)
@@ -22,6 +23,8 @@ L.Icon.Default.mergeOptions({
 Vue.use(Buefy)
 
 Vue.config.productionTip = false
+
+axios.defaults.baseURL = process.env.VUE_APP_BASE_URL
 
 new Vue({
   render: h => h(App)
