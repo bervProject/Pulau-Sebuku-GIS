@@ -12,7 +12,7 @@
     "buefy": "^0.7.1",
     "vue": "^2.5.17",
     "vue2-leaflet": "^1.2.3",
-    "vuelayers": "^0.11.1"
+    "vuelayers": "^0.11.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
