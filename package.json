@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "buefy": "^0.7.1",
-    "vue": "^2.5.17",
+    "vue": "^2.6.10",
     "vue2-leaflet": "^1.2.3",
     "vuelayers": "^0.11.4"
   },
@@ -23,6 +23,6 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
     "standard": "^12.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.10"
   }
 }
