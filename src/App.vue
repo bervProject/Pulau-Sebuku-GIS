@@ -2,68 +2,24 @@
   <div>
     <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item subtitle" href="/">
+        <a class="navbar-item" href="/">
           Pulau Sebuku GIS
         </a>
-      </div>
-    </nav>
 
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <l-map ref="myMap" style="height: 500px; width: 100%; z-index: 0" :zoom="zoom" :center="center">
-              <l-tile-layer :url="url"></l-tile-layer>
-              <l-geo-json v-if="isCoastline" :geojson="coastline"></l-geo-json>
-              <l-geo-json v-if="isPeak" :geojson="peak"></l-geo-json>
-            </l-map>
-          </div>
-          <div class="column is-one-fifths">
-            <div class="card">
-              <div class="card-content">
-                <h3 class="subtitle">Keterangan Lahan Kritis :</h3>
-                <table class="table is-bordered">
-                  <thead>
-                    <tr>
-                      <th>Warna</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tr>
-                    <td style="background-color:#A06332"></td>
-                    <td>Tidak Kritis</td>
-                  </tr>
-                  <tr>
-                    <td style="background-color:#D19A6F"></td>
-                    <td>Agak Kritis</td>
-                  </tr>
-                  <tr>
-                    <td style="background-color:#FED699"></td>
-                    <td>Kritis</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <h2 class="subtitle">Options</h2>
-                <div class="field">
-                  <b-checkbox v-model="isCoastline">
-                    Coastline
-                  </b-checkbox>
-                </div>
-                <div class="field">
-                  <b-checkbox v-model="isPeak">
-                    Peak
-                  </b-checkbox>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <router-link class="navbar-item" to="/">Home</router-link>
+          <router-link class="navbar-item" to="/data">Data</router-link>
         </div>
       </div>
-    </section>
-
+    </nav>
+    <router-view/>
     <footer class="footer">
       <div class="content has-text-centered">
         <p>

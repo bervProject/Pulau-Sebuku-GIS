@@ -1,39 +1,22 @@
-import axios from 'axios'
-export default {
-  name: 'app',
-  data () {
-    return {
-      url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-      zoom: 11.1,
-      center: [-3.5, 116.36667],
-      bounds: null,
-      coastline: null,
-      peak: null,
-      lahanKritis: null,
-      isPeak: true,
-      isCoastline: true
-    }
-  },
-  methods: {
-    loadCoastline () {
-      axios.get('/assets/sebuku-coastline.geojson')
-        .then(response => {
-          this.coastline = response.data
-        })
-    },
-    loadPeak () {
-      axios.get('/assets/sebuku-node-peak.geojson')
-        .then(response => {
-          this.peak = response.data
-        })
-    },
-    loadLahanKritis () {
-      this.lahanKritis = window.omnivore.kml('assets/Kalimantan.kml')
-    }
-  },
-  created () {
-    this.loadCoastline()
-    this.loadPeak()
-    // this.loadLahanKritis()
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target
+        const $target = document.getElementById(target)
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active')
+        $target.classList.toggle('is-active')
+      })
+    })
   }
+})
+export default {
+  name: 'app'
 }

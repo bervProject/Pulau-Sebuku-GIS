@@ -6,7 +6,10 @@ import Buefy from 'buefy'
 import { L, LMap, LTileLayer, LMarker, LGeoJson } from 'vue2-leaflet'
 import App from './App.vue'
 import axios from 'axios'
+import VueRouter from 'vue-router'
+import router from './router'
 
+Vue.use(VueRouter)
 Vue.component('l-map', LMap)
 Vue.component('l-tile-layer', LTileLayer)
 Vue.component('l-marker', LMarker)
@@ -27,5 +30,6 @@ Vue.config.productionTip = false
 axios.defaults.baseURL = process.env.VUE_APP_BASE_URL
 
 new Vue({
-  render: h => h(App)
+  render: h => h(App),
+  router
 }).$mount('#app')
