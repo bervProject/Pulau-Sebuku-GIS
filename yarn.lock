@@ -8531,10 +8531,10 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuelayers@^0.11.4:
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.11.4.tgz#1459d0b00f82fac13f528cd00822eaac40054d1e"
-  integrity sha512-6asCq2vDCPM4mS60NGeEBGKiVVJZ/GACYtu7UUVPkhtdmvI7bSzKjKuv0cTQkwcgh6YRtqzAIzML0l9fwb4AQw==
+vuelayers@^0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.11.7.tgz#76bc3d39c782fda5c5a52f4ddb6ea004e60c57fc"
+  integrity sha512-ayrv8B5kv2ob/7HBKa0BOwQR6j3ReHaoMq2Sp6NJAW5oWKnFs4Cg/dV4B2CFe50WFzOmKQwqbK6W9XI3wGZa7w==
   dependencies:
     "@babel/runtime-corejs2" "^7.1.2"
     "@turf/point-on-feature" "^5.1.5"
@@ -8545,7 +8545,6 @@ vuelayers@^0.11.4:
     parse-color "^1.0.0"
     rxjs "^6.3.3"
     uuid "^3.3.2"
-    whatwg-fetch "^3.0.0"
 
 watchpack@^1.6.0:
   version "1.6.0"
@@ -8717,11 +8716,6 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
   integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
-
-whatwg-fetch@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
-  integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
 
 which-module@^2.0.0:
   version "2.0.0"
