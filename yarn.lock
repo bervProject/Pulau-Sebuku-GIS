@@ -8494,10 +8494,10 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuelayers@^0.11.9:
-  version "0.11.9"
-  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.11.9.tgz#65aa6165a386ec03177b9fdc167d40e1d81eeac9"
-  integrity sha512-Tp0x2IBukMH/Z/KqJPy4YWEH4+G+3bbmA81R+gEGnJg9DQ96RQ0HLzH/OfITMeNyZHou7gWzpjlHUwXqZbUq/g==
+vuelayers@^0.11.11:
+  version "0.11.11"
+  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.11.11.tgz#d4b14f3cdcfc57f6bbe0926d267b300371af3860"
+  integrity sha512-paKq76mgDF5swq6kGRYcWrP0zCP10tJzDDWsP/NMFzYdc/0aUU4SDZNSP1KQc8robceTaryL1tK1GcLM2WYcyQ==
   dependencies:
     "@babel/runtime-corejs2" "^7.1.2"
     "@turf/point-on-feature" "^5.1.5"
