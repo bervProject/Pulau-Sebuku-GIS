@@ -19,12 +19,16 @@ export default {
       axios.get('/assets/sebuku-coastline.geojson')
         .then(response => {
           this.coastline = response.data
+        }).catch(err => {
+          this.$buefy.notification.open(`Failed to Load Coastline. With Error: ${err.message}`)
         })
     },
     loadPeak () {
       axios.get('/assets/sebuku-node-peak.geojson')
         .then(response => {
           this.peak = response.data
+        }).catch(err => {
+          this.$buefy.notification.open(`Failed to Load Node Peak. With Error: ${err.message}`)
         })
     },
     loadLahanKritis () {
