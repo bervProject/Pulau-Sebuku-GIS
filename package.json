@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.19.1",
-    "buefy": "^0.8.9",
+    "buefy": "^0.8.10",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vue2-leaflet": "^1.2.3",
