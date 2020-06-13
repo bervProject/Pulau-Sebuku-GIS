@@ -16,7 +16,7 @@
     "vuelayers": "^0.11.26"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.1",
+    "@vue/cli-plugin-babel": "^4.4.4",
     "@vue/cli-plugin-eslint": "^4.4.1",
     "@vue/cli-service": "^4.4.1",
     "@vue/eslint-config-standard": "^5.1.2",
