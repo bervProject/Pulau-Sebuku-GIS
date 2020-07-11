@@ -11,7 +11,8 @@ export default {
       peak: null,
       lahanKritis: null,
       isPeak: true,
-      isCoastline: true
+      isCoastline: true,
+      isLahanKritis: true
     }
   },
   methods: {
@@ -32,12 +33,24 @@ export default {
         })
     },
     loadLahanKritis () {
-      this.lahanKritis = window.omnivore.kml('assets/Kalimantan.kml')
+      axios.get('/assets/sebuku-lahan.geojson')
+        .then(response => {
+          this.lahanKritis = response.data
+        }).catch(err => {
+          this.$buefy.notification.open(`Failed to Load Lahan Kritis. With Error: ${err.message}`)
+        })
+    },
+    loadStyle (feature) {
+      switch (feature.properties.KRITIS) {
+        case 'Agak Kritis': return { color: '#D19A6F' }
+        case 'Kritis': return { color: '#FED699' }
+        case 'Potensial Kritis': return { color: '#A06332' }
+      }
     }
   },
   created () {
     this.loadCoastline()
     this.loadPeak()
-    // this.loadLahanKritis()
+    this.loadLahanKritis()
   }
 }
