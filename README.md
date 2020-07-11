@@ -4,6 +4,8 @@
 
 This repository forked from https://github.com/BesutKode/uni-task-2-berviantoleo. This repositories will updated with some new features and maybe data.
 
+![Sebuku Home](documents/homepage.png)
+
 ## How to Deploy
 
 `In Progress`
@@ -96,6 +98,10 @@ This query will also show mountain or hill in Indonesia because if restrict only
 This data from Kementrian Kehutanan. Data downloaded from [here](http://appgis.dephut.go.id/appgis/download.aspx).
 
 License of Data Lahan Kritis : [Creative Commons Attribution Lisence (cc-by)](http://www.opendefinition.org/licenses/cc-by) as mentioned in [data.go.id](http://data.go.id/dataset/data-lahan-kritis-di-kalimantan/resource/24281d8c-3472-4c7c-99be-01fcc4666384)
+
+Notes:
+
+* Edited with remove another layer, just take the Sebuku area
 
 ## GIS Creation of Pulau Sebuku
 
