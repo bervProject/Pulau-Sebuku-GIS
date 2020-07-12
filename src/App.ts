@@ -1,9 +1,14 @@
+import Vue from 'vue'
+import Components from 'vue-class-component';
 import MyHeader from '@/components/MyHeader.vue'
 import MyFooter from '@/components/MyFooter.vue'
-export default {
-  name: 'app',
+
+@Components({
+  name: 'App',
   components: {
     MyHeader,
     MyFooter
   }
+})
+export default class App extends Vue {
 }

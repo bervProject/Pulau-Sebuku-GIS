@@ -3,7 +3,8 @@ import 'leaflet/dist/leaflet.css'
 
 import Vue from 'vue'
 import Buefy from 'buefy'
-import { L, LMap, LTileLayer, LMarker, LGeoJson } from 'vue2-leaflet'
+import { LMap, LTileLayer, LMarker, LGeoJson } from 'vue2-leaflet'
+import { Icon } from 'leaflet';
 import App from './App.vue'
 import axios from 'axios'
 import VueRouter from 'vue-router'
@@ -15,13 +16,16 @@ Vue.component('l-tile-layer', LTileLayer)
 Vue.component('l-marker', LMarker)
 Vue.component('l-geo-json', LGeoJson)
 
-delete L.Icon.Default.prototype._getIconUrl
-
-L.Icon.Default.mergeOptions({
+type D = Icon.Default & {
+  _getIconUrl: string;
+};
+delete (Icon.Default.prototype as D)._getIconUrl;
+Icon.Default.mergeOptions({
   iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
   iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png')
-})
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
+
 
 Vue.use(Buefy)
 
