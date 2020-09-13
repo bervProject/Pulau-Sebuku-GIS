@@ -17,7 +17,7 @@ Vue.component('l-marker', LMarker)
 Vue.component('l-geo-json', LGeoJson)
 
 type D = Icon.Default & {
-  _getIconUrl: string;
+  _getIconUrl?: string;
 };
 delete (Icon.Default.prototype as D)._getIconUrl;
 Icon.Default.mergeOptions({
