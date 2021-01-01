@@ -17,7 +17,7 @@
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.4.9",
     "vue2-leaflet": "^2.6.0",
-    "vuelayers": "^0.11.28"
+    "vuelayers": "^0.11.30"
   },
   "devDependencies": {
     "@types/leaflet": "^1.5.19",
