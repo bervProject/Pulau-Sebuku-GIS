@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "buefy": "^0.9.11",
+    "buefy": "^0.9.13",
     "leaflet": "^1.7.1",
     "tslint-config-prettier": "^1.18.0",
     "vue": "^2.6.14",
