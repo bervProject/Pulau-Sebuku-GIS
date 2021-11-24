@@ -20,7 +20,7 @@
     "vuelayers": "^0.11.37"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.7.5",
+    "@types/leaflet": "^1.7.6",
     "@vue/cli-plugin-babel": "^4.5.15",
     "@vue/cli-plugin-typescript": "^4.5.15",
     "@vue/cli-service": "^4.5.15",
