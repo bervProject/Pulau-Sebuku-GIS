@@ -9,9 +9,8 @@
   },
   "dependencies": {
     "axios": "^0.26.0",
-    "buefy": "^0.9.17",
+    "buefy": "^0.9.19",
     "leaflet": "^1.7.1",
-    "tslint-config-prettier": "^1.18.0",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
@@ -21,9 +20,18 @@
   },
   "devDependencies": {
     "@types/leaflet": "^1.7.9",
-    "@vue/cli-plugin-babel": "^4.5.15",
-    "@vue/cli-plugin-typescript": "^4.5.15",
-    "@vue/cli-service": "^4.5.15",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "@vue/cli-plugin-babel": "~5.0.1",
+    "@vue/cli-plugin-eslint": "~5.0.1",
+    "@vue/cli-plugin-typescript": "~5.0.1",
+    "@vue/cli-service": "~5.0.1",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-vue": "^8.5.0",
+    "eslint-plugin-vuejs-accessibility": "^1.1.1",
     "typescript": "~4.6.2",
     "vue-template-compiler": "^2.6.14"
   }
