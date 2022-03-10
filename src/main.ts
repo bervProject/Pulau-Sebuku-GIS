@@ -9,7 +9,7 @@ import {
 import { Icon } from 'leaflet';
 import axios from 'axios';
 import VueRouter from 'vue-router';
-import App from './App.vue';
+import BaseApp from './BaseApp.vue';
 import router from './router';
 
 Vue.use(VueRouter);
@@ -35,6 +35,6 @@ Vue.config.productionTip = false;
 axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
 
 new Vue({
-  render: (h) => h(App),
+  render: (h) => h(BaseApp),
   router,
 }).$mount('#app');

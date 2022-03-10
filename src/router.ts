@@ -1,10 +1,10 @@
 import VueRouter from 'vue-router';
-import Home from './Home.vue';
+import HomePage from './HomePage.vue';
 
 const SupportData = () => import(/* webpackChunkName: "support-data" */'./SupportData.vue');
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', component: HomePage },
   { path: '/data', component: SupportData },
 ];
 

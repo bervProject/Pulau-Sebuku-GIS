@@ -12,7 +12,11 @@
             <l-tile-layer :url="url"></l-tile-layer>
             <l-geo-json v-if="isCoastline" :geojson="coastline"></l-geo-json>
             <l-geo-json v-if="isPeak" :geojson="peak"></l-geo-json>
-            <l-geo-json v-if="isLahanKritis" :geojson="lahanKritis" :optionsStyle="loadStyle"></l-geo-json>
+            <l-geo-json
+              v-if="isLahanKritis"
+              :geojson="lahanKritis"
+              :optionsStyle="loadStyle"
+            ></l-geo-json>
           </l-map>
         </div>
         <div class="column is-one-fifths">
@@ -27,15 +31,15 @@
                   </tr>
                 </thead>
                 <tr>
-                  <td style="background-color:#A06332"></td>
+                  <td style="background-color: #a06332"></td>
                   <td>Tidak Kritis</td>
                 </tr>
                 <tr>
-                  <td style="background-color:#D19A6F"></td>
+                  <td style="background-color: #d19a6f"></td>
                   <td>Agak Kritis</td>
                 </tr>
                 <tr>
-                  <td style="background-color:#FED699"></td>
+                  <td style="background-color: #fed699"></td>
                   <td>Kritis</td>
                 </tr>
               </table>
@@ -61,5 +65,5 @@
   </section>
 </template>
 
-<script lang="ts" src="./Home.ts">
+<script lang="ts" src="./HomePage.ts">
 </script>

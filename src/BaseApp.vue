@@ -6,5 +6,5 @@
   </div>
 </template>
 
-<script lang="ts" src="./App.ts">
+<script lang="ts" src="./BaseApp.ts">
 </script>

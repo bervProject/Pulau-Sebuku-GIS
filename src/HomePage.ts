@@ -3,9 +3,9 @@ import Component from 'vue-class-component';
 import Vue from 'vue';
 
 @Component({
-  name: 'Home',
+  name: 'HomePage',
 })
-export default class Home extends Vue {
+export default class HomePage extends Vue {
   protected url = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
 
   protected zoom = 11.1;
@@ -62,6 +62,7 @@ export default class Home extends Vue {
       case 'Agak Kritis': return { color: '#D19A6F' };
       case 'Kritis': return { color: '#FED699' };
       case 'Potensial Kritis': return { color: '#A06332' };
+      default: return { color: '#FFFFFF' };
     }
   }
 }
