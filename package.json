@@ -19,7 +19,7 @@
     "vuelayers": "^0.12.3"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.7.9",
+    "@types/leaflet": "^1.7.10",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.21.0",
     "@vue/cli-plugin-babel": "~5.0.4",
