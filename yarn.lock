@@ -6633,10 +6633,10 @@ vue@^2.6.14:
   resolved "https://registry.npmjs.org/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
-vuelayers@^0.12.4:
-  version "0.12.4"
-  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.12.4.tgz#84cc0f432d4ddc254a1b5d0abba2dcb56bd1ee70"
-  integrity sha512-E2B53KupKdQH/IN/+vMnTHoXEEN/+owEN8jGBVbdF/gPT6I0GZcFFxu8yVLPopVng1XmOBzt8xiKb7aPtnSROQ==
+vuelayers@^0.12.5:
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.12.5.tgz#5cc8e26d773060d51b29b596777098cd014e87fd"
+  integrity sha512-hO1rMTL4s6zJVJy8B9a9mwpkdS/rSq0WnaYg/nbRnLBqgSyV3GOT8XztQ/vxlkqYGhA9FeQW71SupRDo8lnxUg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@turf/point-on-feature" "^5.1.5"
@@ -6648,12 +6648,6 @@ vuelayers@^0.12.4:
     parse-color "^1.0.0"
     rxjs "^6.6.3"
     uuid "^8.3.1"
-    vuequery "^2.1.1"
-
-vuequery@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/vuequery/-/vuequery-2.1.1.tgz#5ff82ebecaf143a77a705637612f499977d06b4a"
-  integrity sha512-5RCU9qZ07oKrBivucM1gnn2evsNYzRxYiglJaMdnOjL3kGrKS1ptAmOS7jZQp7KW9oNHpbG8shT8rzjaKsZ0pQ==
 
 watchpack@^2.3.1:
   version "2.4.0"
