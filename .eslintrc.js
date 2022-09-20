@@ -22,4 +22,16 @@ module.exports = {
     'default-case': 'warn',
     'max-len': 'warn',
   },
+  "settings": {
+    "import/resolver": {
+      "import/extensions": [
+        ".js",
+        ".jsx",
+        ".mjs",
+        ".ts",
+        ".tsx",
+        ".vue"
+      ]
+    }
+  }
 };
