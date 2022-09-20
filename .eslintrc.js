@@ -1,3 +1,5 @@
+require('@rushstack/eslint-patch/modern-module-resolution');
+
 module.exports = {
   root: true,
   env: {
@@ -5,8 +7,7 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    '@vue/airbnb',
-    '@vue/typescript/recommended',
+    '@vue/eslint-config-airbnb-with-typescript',
   ],
   parserOptions: {
     ecmaVersion: 2020,
