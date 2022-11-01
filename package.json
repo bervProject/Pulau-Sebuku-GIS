@@ -16,7 +16,7 @@
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.6.4",
     "vue2-leaflet": "^2.7.1",
-    "vuelayers": "^0.12.5"
+    "vuelayers": "^0.12.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
