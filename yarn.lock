@@ -7129,10 +7129,10 @@ vue@^2.7.14:
     "@vue/compiler-sfc" "2.7.14"
     csstype "^3.1.0"
 
-vuelayers@^0.12.6:
-  version "0.12.6"
-  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.12.6.tgz#d9fad866f86e8b0f9783b5812546d7c01f7a39fd"
-  integrity sha512-mhog0D2Vsd+xAXDY3YPMpF8eG87LH7IaK10kF6+KAHOk2F+/Sge9fJ24jfZZFTLp38c0JmthvlUd2giIJ4TGaA==
+vuelayers@^0.12.7:
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/vuelayers/-/vuelayers-0.12.7.tgz#ae2edf09f446bc5e669dfb043614970e08ea2c66"
+  integrity sha512-ncatga2ZAt3IpMzen6WqBLfsP6Xfh4fe4hH74u8Q/U38kMYii0Df5eWT8l5GY+MzTl4jAMEQhS1olRxOeYDKew==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@turf/point-on-feature" "^5.1.5"
