@@ -49,13 +49,13 @@
             <div class="card-content">
               <h2 class="subtitle">Options</h2>
               <div class="field">
-                <b-checkbox v-model="isCoastline">Coastline</b-checkbox>
+                <o-checkbox v-model="isCoastline">Coastline</o-checkbox>
               </div>
               <div class="field">
-                <b-checkbox v-model="isPeak">Peak</b-checkbox>
+                <o-checkbox v-model="isPeak">Peak</o-checkbox>
               </div>
               <div class="field">
-                <b-checkbox v-model="isLahanKritis">Lahan Kritis</b-checkbox>
+                <o-checkbox v-model="isLahanKritis">Lahan Kritis</o-checkbox>
               </div>
             </div>
           </div>
