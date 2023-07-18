@@ -1,22 +1,25 @@
-import 'buefy/dist/buefy.css';
 import 'leaflet/dist/leaflet.css';
+import '@oruga-ui/theme-bulma/dist/bulma.css';
 
-import Vue from 'vue';
-import Buefy from 'buefy';
+import { createApp } from 'vue';
 import {
   LMap, LTileLayer, LMarker, LGeoJson,
-} from 'vue2-leaflet';
+} from '@vue-leaflet/vue-leaflet';
 import { Icon } from 'leaflet';
+import Oruga from '@oruga-ui/oruga-next';
+import { bulmaConfig } from '@oruga-ui/theme-bulma';
 import axios from 'axios';
-import VueRouter from 'vue-router';
 import BaseApp from './BaseApp.vue';
 import router from './router';
 
-Vue.use(VueRouter);
-Vue.component('l-map', LMap);
-Vue.component('l-tile-layer', LTileLayer);
-Vue.component('l-marker', LMarker);
-Vue.component('l-geo-json', LGeoJson);
+const app = createApp(BaseApp);
+app.use(router);
+app.use(Oruga, bulmaConfig);
+
+app.component('l-map', LMap);
+app.component('l-tile-layer', LTileLayer);
+app.component('l-marker', LMarker);
+app.component('l-geo-json', LGeoJson);
 
 type D = Icon.Default & {
   _getIconUrl?: string;
@@ -28,13 +31,6 @@ Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-Vue.use(Buefy);
-
-Vue.config.productionTip = false;
-
 axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
 
-new Vue({
-  render: (h) => h(BaseApp),
-  router,
-}).$mount('#app');
+app.mount('#app');
