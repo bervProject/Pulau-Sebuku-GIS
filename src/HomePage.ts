@@ -20,7 +20,7 @@ export default defineComponent({
     isLahanKritis: boolean,
   } {
     return {
-      url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+      url: 'https://{s}.tile.osm.org/{z}/{x}/{y}.png',
       zoom: 11.1,
       center: [-3.5, 116.36667],
       coastline: null,
