@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { defineComponent } from 'vue';
-import { useProgrammatic } from '@oruga-ui/oruga-next';
+import { useOruga } from '@oruga-ui/oruga-next';
 
 export default defineComponent({
   name: 'HomePage',
   setup() {
-    const { oruga } = useProgrammatic();
+    const oruga = useOruga();
     return { oruga };
   },
   data(): {
