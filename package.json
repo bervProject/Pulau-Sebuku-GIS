@@ -12,7 +12,7 @@
     "@oruga-ui/theme-bulma": "^0.2.11",
     "axios": "^1.6.7",
     "leaflet": "^1.9.4",
-    "vue": "^3.4.15",
+    "vue": "^3.4.21",
     "vue-router": "^4.2.5",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
     "vuelayers": "^0.12.7"
