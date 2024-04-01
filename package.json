@@ -32,6 +32,6 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-vue": "^9.22.0",
     "eslint-plugin-vuejs-accessibility": "^2.2.1",
-    "typescript": "~5.3.3"
+    "typescript": "~5.4.3"
   }
 }
