@@ -30,7 +30,7 @@
     "@vue/eslint-config-airbnb-with-typescript": "^8.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-vue": "^9.27.0",
+    "eslint-plugin-vue": "^9.28.0",
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "typescript": "~5.5.4"
   }
