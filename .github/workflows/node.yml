@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-24.04
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [20.x, 22.x]
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
@@ -20,7 +20,7 @@ jobs:
     - run: yarn lint
     - run: yarn build
     - name: Deploy
-      if: ${{ github.event_name == 'push' && matrix.node-version == '20.x' }}
+      if: ${{ github.event_name == 'push' && matrix.node-version == '22.x' }}
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
