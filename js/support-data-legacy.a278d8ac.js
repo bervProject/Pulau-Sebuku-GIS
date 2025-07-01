@@ -1,2 +1,2 @@
 "use strict";(self["webpackChunkuni_task_2_berviantoleo"]=self["webpackChunkuni_task_2_berviantoleo"]||[]).push([[509],{2069:function(n,e,a){a.r(e),a.d(e,{default:function(){return o}});var t=a(641),r={class:"section"};function c(n,e){return(0,t.uX)(),(0,t.CE)("section",r,e[0]||(e[0]=[(0,t.Lk)("div",{class:"container"},[(0,t.Lk)("div",{class:"card"},[(0,t.Lk)("div",{class:"card-content"},"Currently Under Maintainance")])],-1)]))}var s=a(6262);const i={},u=(0,s.A)(i,[["render",c]]);var o=u}}]);
-//# sourceMappingURL=support-data-legacy.18d0b7c2.js.map
+//# sourceMappingURL=support-data-legacy.a278d8ac.js.map
