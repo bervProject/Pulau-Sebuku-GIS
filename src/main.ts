@@ -1,5 +1,5 @@
 import 'leaflet/dist/leaflet.css';
-import '@oruga-ui/theme-bulma/theme.css';
+import '@oruga-ui/theme-bulma/style.css';
 
 import { createApp } from 'vue';
 import {
