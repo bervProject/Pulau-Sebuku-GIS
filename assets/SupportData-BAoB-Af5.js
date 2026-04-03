@@ -1,1 +1,0 @@
-import{_ as t,o as a,c,a as e}from"./index-D8jL85wy.js";const n={},o={class:"section"};function r(i,s){return a(),c("section",o,[...s[0]||(s[0]=[e("div",{class:"container"},[e("div",{class:"card"},[e("div",{class:"card-content"},"Currently Under Maintainance")])],-1)])])}const l=t(n,[["render",r]]);export{l as default};
