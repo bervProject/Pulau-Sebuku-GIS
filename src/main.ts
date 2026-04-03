@@ -6,15 +6,18 @@ import {
   LMap, LTileLayer, LMarker, LGeoJson,
 } from '@vue-leaflet/vue-leaflet';
 import { Icon } from 'leaflet';
-import Oruga from '@oruga-ui/oruga-next';
+import { createOruga, OrugaComponentPlugins } from '@oruga-ui/oruga-next';
 import { bulmaConfig } from '@oruga-ui/theme-bulma';
 import axios from 'axios';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import BaseApp from './BaseApp.vue';
 import router from './router';
 
 const app = createApp(BaseApp);
 app.use(router);
-app.use(Oruga, bulmaConfig);
+app.use(createOruga(bulmaConfig, OrugaComponentPlugins));
 
 app.component('l-map', LMap);
 app.component('l-tile-layer', LTileLayer);
@@ -26,11 +29,11 @@ type D = Icon.Default & {
 };
 delete (Icon.Default.prototype as D)._getIconUrl;
 Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
 });
 
-axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 
 app.mount('#app');
