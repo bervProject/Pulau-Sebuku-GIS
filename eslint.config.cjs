@@ -6,7 +6,6 @@ const {
   defineConfigWithVueTs,
   vueTsConfigs,
 } = require('@vue/eslint-config-typescript')
-require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = defineConfigWithVueTs(
   {
