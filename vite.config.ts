@@ -14,4 +14,13 @@ export default defineConfig({
     environment: 'happy-dom',
     globals: true,
   },
+  css: {
+    transformer: 'lightningcss',
+    lightningcss: {
+      errorRecovery: true,
+    },
+  },
+  build: {
+    cssMinify: 'lightningcss',
+  },
 });
