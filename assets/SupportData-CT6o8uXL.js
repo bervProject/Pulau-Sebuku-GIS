@@ -1,1 +1,0 @@
-import{i as e,n as t,r as n,t as r}from"./index-Biw4WSm8.js";var i={},a={class:`section`};function o(r,i){return e(),n(`section`,a,[...i[0]||=[t(`div`,{class:`container`},[t(`div`,{class:`card`},[t(`div`,{class:`card-content`},`Currently Under Maintainance`)])],-1)]])}var s=r(i,[[`render`,o]]);export{s as default};
