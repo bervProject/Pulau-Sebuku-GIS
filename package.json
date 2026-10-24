@@ -33,7 +33,7 @@
     "eslint-plugin-vue": "^10.9.2",
     "eslint-plugin-vuejs-accessibility": "^2.5.0",
     "globals": "^17.7.0",
-    "happy-dom": "^20.10.6",
+    "happy-dom": "^21.0.4",
     "start-server-and-test": "^3.0.11",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.62.1",
